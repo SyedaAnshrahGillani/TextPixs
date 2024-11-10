@@ -1,7 +1,5 @@
 
 
-<body>
-
     <h1>Login and Registration Form 📝🔐</h1>
 
     <p>A user-friendly, responsive Login and Registration form designed to provide a seamless experience for users to create an account and log in. Built with HTML, CSS, and JavaScript, this form ensures a secure and efficient process with real-time validation and clear error handling.</p>
@@ -91,7 +89,4 @@ cd textpixs
     <h2 id="license">License 📄</h2>
     <p>This project is licensed under the MIT License. See the LICENSE file for more information.</p>
 
-    <script src="js/script.js"></script> <!-- JavaScript link -->
-</body>
 
-</html>
