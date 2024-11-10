@@ -39,8 +39,8 @@
 <h3>Installation</h3>
 <ol>
     <li><strong>Clone the Repository:</strong>
-        <pre><code>git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+        <pre><code>git clone https://github.com/SyedaAnshrahGillani/textpixs.git
+cd textpixs
 </code></pre>
     </li>
     <li><strong>Open the Project:</strong>
