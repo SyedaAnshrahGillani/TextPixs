@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/logo.png" width="500" alt="TextPixs Logo Placeholder"/>
+  <img src="./assets/logo.png" width="700" alt="TextPixs Logo Placeholder"/>
 </p>
 
 # 🎨✨ TextPixs: Enhancing Text Rendering in Text-to-Image Generation: A Novel Approach
