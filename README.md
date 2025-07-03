@@ -1,6 +1,10 @@
 # TextPixs 🎨✨
 
-Welcome to **TextPixs**, a research-based, AI-powered tool designed to generate stunning, high-quality images directly from text prompts. TextPixs aims to redefine creativity by making professional-quality visuals accessible to everyone, regardless of artistic skills or experience, while addressing critical challenges in text-to-image generation.
+## Abstract / Executive Summary
+
+**TextPixs** is a pioneering research project focused on advancing the field of text-to-image generation. It aims to develop a novel hybrid AI architecture that enhances image rendering, improves text fidelity, and refines visual quality in generated images. By addressing current limitations such as ambiguity in text prompts, alignment challenges, and the lack of robust loss functions, TextPixs seeks to bridge the gap between textual ideas and compelling visuals. This project contributes to cutting-edge generative AI technology with potential applications in content creation, advertising, and human-computer interaction.
+
+## Table of Contents 📚
 
 ## Table of Contents 📚
 
@@ -14,6 +18,8 @@ Welcome to **TextPixs**, a research-based, AI-powered tool designed to generate 
 - [Roadmap](#roadmap)
 - [Team](#team)
 - [FYP1 Deliverables](#fyp1-deliverables)
+- [Project Structure](#project-structure)
+- [Contact](#contact)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -86,6 +92,25 @@ The following key deliverables from FYP1 are available in the `docs/fyp1` direct
 - **Model Training Recording**: `model_training_recording.mov`
 - **Standee Design**: `standee.pdf`
 - **Image Asset**: `image.png`
+
+## Project Structure 📁
+
+The repository is organized as follows:
+
+```
+TextPixs/
+├── docs/
+│   └── fyp1/             # Contains all deliverables from FYP1
+├── .github/              # GitHub Actions workflows and configurations
+├── LICENSE               # Project license
+└── README.md             # This README file
+```
+
+## Contact 📧
+
+For any inquiries or collaborations, please contact:
+
+- **Syeda Anshrah Gillani (Group Leader)**: [Your Email Here]
 
 ## Contributing 🤝
 
