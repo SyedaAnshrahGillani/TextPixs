@@ -99,7 +99,7 @@ Our project roadmap is structured into phases, with iterative progress on delive
 ## Team 👥
 
 **Internal Supervisor**: Sir Osama Ahmed Khan
-**External Supervisor & Sponsor**: Mirza Samad Ahmed Baig
+**External Supervisor & Sponsor**: **Mirza Samad Ahmed Baig** (mirzasamadahmedbaig@gmail.com)
 
 **Team Members**:
 - **Syeda Anshrah Gillani (Group Leader)** (1337-2021)
@@ -152,7 +152,7 @@ We are actively working on and planning the following:
 
 For any inquiries or collaborations, please contact:
 
-- **Syeda Anshrah Gillani (Group Leader)**: [Your Email Here]
+- **Syeda Anshrah Gillani (Group Leader)**: syedaanshrah16@gmail.com
 
 ## Contributing 🤝
 
