@@ -37,59 +37,9 @@ TextPixs intends to bridge the gap between ideas and visuals, providing users wi
 - **Text-to-Image Generation**: Input a description, and TextPixs will create a high-quality image that matches your vision. This feature leverages a hybrid architecture incorporating Generative Adversarial Networks (GANs) with a Generator and Discriminator, and integrates a fine-tuned Stable Diffusion model for robust image synthesis.
 - **Image Modifications** (Phase 2): Modify existing images using text prompts for further customization and creativity.
 - **Text-to-Video Capabilities** (Future Phase): Generate short videos from descriptive prompts.
-- **User Authentication**: Google sign-in/sign-out options for a seamless login experience.
 
-## Getting Started ⚙️
 
-To start creating with TextPixs, follow these steps to get the project running locally.
 
-### Prerequisites ✅
-
-- Python 3.8 or higher
-- Node.js and npm
-- Git
-
-## Installation 🛠️
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/SyedaAnshrahGillani/textpixs.git
-   cd textpixs
-   ```
-
-2. **Install Backend Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Install Frontend Dependencies:**
-
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-4. **Configure Environment Variables**:
-   Set up the required API keys and environment variables in the `.env` file.
-
-## Usage 💻
-
-1. **Start the Backend Server**:
-
-   ```bash
-   python app.py
-   ```
-
-2. **Run the Frontend**:
-
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-3. Open your browser and go to `http://localhost:3000` to start creating images with TextPixs!
 
 ## Technologies Used 🛡️
 
@@ -97,7 +47,7 @@ To start creating with TextPixs, follow these steps to get the project running l
 - **Frontend**: React.js, HTML, CSS
 - **Database**: PostgreSQL
 - **AI/ML Models**: Fine-Tuned Stable Diffusion Model, Generative Adversarial Networks (GANs) with PyTorch.
-- **Authentication**: Google OAuth
+
 
 ## Roadmap 🗺️
 
@@ -116,10 +66,10 @@ Our project roadmap is structured into phases, with iterative progress on delive
 ## Team 👥
 
 **Internal Supervisor**: Sir Osama Ahmed Khan
-**External Supervisor**: Mirza Samad Ahmed Baig
+**External Supervisor & Sponsor**: Mirza Samad Ahmed Baig
 
 **Team Members**:
-- Syeda Anshrah Gillani (1337-2021)
+- **Syeda Anshrah Gillani (Group Leader)** (1337-2021)
 - Umema Mujeeb (2396-2021)
 - Maheen Ali (1589-2021)
 
