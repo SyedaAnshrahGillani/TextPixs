@@ -34,7 +34,7 @@ from torchvision.utils import make_grid, save_image
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from app import safety_check
-from app.sana_pipeline import SanaPipeline
+# from app.sana_pipeline import SanaPipeline # Removed SanaPipeline import
 
 MAX_SEED = np.iinfo(np.int32).max
 CACHE_EXAMPLES = torch.cuda.is_available() and os.getenv("CACHE_EXAMPLES", "1") == "1"
@@ -124,20 +124,20 @@ def norm_ip(img, low, high):
 def open_db():
     db = sqlite3.connect(COUNTER_DB)
     db.execute("CREATE TABLE IF NOT EXISTS counter(app CHARS PRIMARY KEY UNIQUE, value INTEGER)")
-    db.execute('INSERT OR IGNORE INTO counter(app, value) VALUES("Sana", 0)')
+    db.execute('INSERT OR IGNORE INTO counter(app, value) VALUES("TextPixs", 0)')
     return db
 
 
 def read_inference_count():
     with open_db() as db:
-        cur = db.execute('SELECT value FROM counter WHERE app="Sana"')
+        cur = db.execute('SELECT value FROM counter WHERE app="TextPixs"')
     return cur.fetchone()[0]
 
 
 def write_inference_count(count):
     count = max(0, int(count))
     with open_db() as db:
-        db.execute(f'UPDATE counter SET value=value+{count} WHERE app="Sana"')
+        db.execute(f'UPDATE counter SET value=value+{count} WHERE app="TextPixs"')
         db.commit()
 
 
@@ -169,13 +169,6 @@ def apply_style(style_name: str, positive: str, negative: str = "") -> tuple[str
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, help="config")
-    parser.add_argument(
-        "--model_path",
-        nargs="?",
-        default="hf://Efficient-Large-Model/Sana_1600M_1024px/checkpoints/Sana_1600M_1024px.pth",
-        type=str,
-        help="Path to the model file (positional)",
-    )
     parser.add_argument("--output", default="./", type=str)
     parser.add_argument("--bs", default=1, type=int)
     parser.add_argument("--image_size", default=1024, type=int)
@@ -197,22 +190,25 @@ def get_args():
 
 args = get_args()
 
-if torch.cuda.is_available():
-    model_path = args.model_path
-    pipe = SanaPipeline(args.config)
-    pipe.from_pretrained(model_path)
-    pipe.register_progress_bar(gr.Progress())
+# Placeholder for TextPixs model loading and pipeline setup
+# if torch.cuda.is_available():
+#     # Load your TextPixs model and pipeline here
+#     # For example:
+#     # pipe = TextPixsPipeline(...)
+#     # pipe.from_pretrained(...)
+#     # pipe.register_progress_bar(gr.Progress())
 
-    # safety checker
-    safety_checker_tokenizer = AutoTokenizer.from_pretrained(args.shield_model_path)
-    safety_checker_model = AutoModelForCausalLM.from_pretrained(
-        args.shield_model_path,
-        device_map="auto",
-        torch_dtype=torch.bfloat16,
-    ).to(device)
+#     # Placeholder for safety checker if needed for TextPixs
+#     # safety_checker_tokenizer = AutoTokenizer.from_pretrained(args.shield_model_path)
+#     # safety_checker_model = AutoModelForCausalLM.from_pretrained(
+#     #     args.shield_model_path,
+#     #     device_map="auto",
+#     #     torch_dtype=torch.bfloat16,
+#     # ).to(device)
 
 
-def save_image_sana(img, seed="", save_img=False):
+
+def save_image_textpixs(img, seed="", save_img=False):
     unique_name = f"{str(uuid.uuid4())}_{seed}.png"
     save_path = os.path.join(f"output/online_demo_img/{datetime.now().date()}")
     os.umask(0o000)  # file permission: 666; dir permission: 777
@@ -260,7 +256,7 @@ def generate(
     # seed = 823753551
     seed = int(randomize_seed_fn(seed, randomize_seed))
     generator = torch.Generator(device=device).manual_seed(seed)
-    print(f"PORT: {DEMO_PORT}, model_path: {model_path}")
+    print(f"PORT: {DEMO_PORT}")
     if safety_check.is_dangerous(safety_checker_tokenizer, safety_checker_model, prompt, threshold=0.2):
         prompt = "A red heart."
 
@@ -274,22 +270,20 @@ def generate(
         negative_prompt = None  # type: ignore
     prompt, negative_prompt = apply_style(style, prompt, negative_prompt)
 
-    pipe.progress_fn(0, desc="Sana Start")
-
-    time_start = time.time()
-    images = pipe(
-        prompt=prompt,
-        height=height,
-        width=width,
-        negative_prompt=negative_prompt,
-        guidance_scale=guidance_scale,
-        pag_guidance_scale=pag_guidance_scale,
-        num_inference_steps=num_inference_steps,
-        num_images_per_prompt=num_imgs,
-        generator=generator,
-    )
-
-    pipe.progress_fn(1.0, desc="Sana End")
+    # Placeholder for TextPixs pipeline execution
+    # images = pipe(
+    #     prompt=prompt,
+    #     height=height,
+    #     width=width,
+    #     negative_prompt=negative_prompt,
+    #     guidance_scale=guidance_scale,
+    #     pag_guidance_scale=pag_guidance_scale,
+    #     num_inference_steps=num_inference_steps,
+    #     num_images_per_prompt=num_imgs,
+    #     generator=generator,
+    # )
+    # For demonstration, return dummy images
+    images = [torch.randn(3, height, width) for _ in range(num_imgs)]
     INFER_SPEED = (time.time() - time_start) / num_imgs
 
     img = [
@@ -314,26 +308,25 @@ def generate(
     )
 
 
-model_size = "1.6" if "1600M" in args.model_path else "0.6"
+# model_size = "1.6" if "1600M" in args.model_path else "0.6"
 title = f"""
     <div style='display: flex; align-items: center; justify-content: center; text-align: center;'>
         <img src="https://raw.githubusercontent.com/NVlabs/Sana/refs/heads/main/asset/logo.png" width="50%" alt="logo"/>
     </div>
 """
 DESCRIPTION = f"""
-        <p><span style="font-size: 36px; font-weight: bold;">Sana-{model_size}B</span><span style="font-size: 20px; font-weight: bold;">{args.image_size}px</span> <span style="font-size: 16px;"><a href="/ctrlnet">[ControlNet]</a></span> <span style="font-size: 16px;"><a href="/4bit">[4Bit]</a></span> <span style="font-size: 16px;"><a href="/sprint">[Sprint]</a></span></p>
-        <p style="font-size: 16px; font-weight: bold;"><a href="https://nvlabs.github.io/Sana">Sana: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer</a></p>
+        <p><span style="font-size: 36px; font-weight: bold;">TextPixs</span><span style="font-size: 20px; font-weight: bold;">{args.image_size}px</span> <span style="font-size: 16px;"><a href="/ctrlnet">[ControlNet]</a></span> <span style="font-size: 16px;"><a href="/4bit">[4Bit]</a></span> <span style="font-size: 16px;"><a href="/sprint">[Sprint]</a></span></p>
+        <p style="font-size: 16px; font-weight: bold;"><a href="https://nvlabs.github.io/Sana">TextPixs: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer</a></p>
         <p style="font-size: 16px; font-weight: bold;">Powered by <a href="https://hanlab.mit.edu/projects/dc-ae">DC-AE</a>, <a href="https://github.com/mit-han-lab/deepcompressor">deepcompressor</a>, and <a href="https://github.com/mit-han-lab/nunchaku">nunchaku</a>.</p>
         <p style="font-size: 16px; font-weight: bold;">Prompts support English, Chinese and emojis.</p>
         <p style="font-size: 16px; font-weight: bold;">Unsafe word will give you a 'Red Heart❤️' in the image instead.</p>
         """
-if model_size == "0.6":
-    DESCRIPTION += "\n<p>0.6B model's text rendering ability is limited.</p>"
+
 if not torch.cuda.is_available():
     DESCRIPTION += "\n<p>Running on CPU 🥶 This demo does not work on CPU.</p>"
 
 examples = [
-    'a cyberpunk cat with a neon sign that says "Sana"',
+    'a cyberpunk cat with a neon sign that says "TextPixs"',
     "A very detailed and realistic full body photo set of a tall, slim, and athletic Shiba Inu in a white oversized straight t-shirt, white shorts, and short white shoes.",
     "Pirate ship trapped in a cosmic maelstrom nebula, rendered in cosmic beach whirlpool engine, volumetric lighting, spectacular, ambient lights, light pollution, cinematic atmosphere, art nouveau style, illustration art artwork by SenseiJaye, intricate detail.",
     "portrait photo of a girl, photograph, highly detailed face, depth of field",
@@ -355,7 +348,8 @@ css = """
 body{align-items: center;}
 h1{text-align:center}
 """
-with gr.Blocks(css=css, title="Sana", delete_cache=(86400, 86400)) as demo:
+with gr.Blocks(css=css, title="TextPixs", delete_cache=(86400, 86400)) as demo:
+
     gr.Markdown(title)
     gr.HTML(DESCRIPTION)
     gr.DuplicateButton(

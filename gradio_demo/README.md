@@ -1,6 +1,6 @@
-# Sana Gradio Demo
+# TextPixs Gradio Demo
 
-This directory contains a Gradio demo for the Sana model, adapted from the `Sana_fork` repository.
+This directory contains a Gradio demo for the TextPixs research project, adapted from a previous repository.
 
 ## Setup
 
