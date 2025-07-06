@@ -18,7 +18,9 @@
 
 ## 🎥 Demo Video
 
-[![Watch the video](./Demo%20recording/Thumbnail_demo.png)](https://drive.google.com/file/d/1409aJytWW4xUxZkxs1JREmj1nK0RTI2E/view?usp=sharing)
+[![Watch the video](./Demo%20recording/Thumbnail_demo.png)](https://drive.google.com/file/d/1b8f2pu2OKtieu2JUkgql-7dF8zCXXSBu/view?usp=sharing)
+
+*(Clicking on the thumbnail will open the demo video in a new tab.)*
 
 ## Abstract / Executive Summary
 
