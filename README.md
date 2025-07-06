@@ -22,6 +22,18 @@
 
 *(Clicking on the thumbnail will open the demo video in a new tab.)*
 
+## 🎥 Demo Video
+
+[![Watch the video](./Demo%20recording/Thumbnail_demo.png)](https://drive.google.com/file/d/1b8f2pu2OKtieu2JUkgql-7dF8zCXXSBu/view?usp=sharing)
+
+*(Clicking on the thumbnail will open the demo video in a new tab.)*
+
+## ✨ Results
+
+<p align="center" border-radius="10px">
+  <img src="./assets/results.png" width="90%" alt="TextPixs Results Image Placeholder"/>
+</p>
+
 ## Abstract / Executive Summary
 
 Text-to-image generation has revolutionized digital content creation, yet a critical challenge persists: accurately rendering text within generated images. This limitation significantly impacts applications ranging from educational tools and design automation to digital art. TextPixs introduces a groundbreaking framework designed to overcome this hurdle. By integrating cutting-edge techniques and innovative mathematical models, our approach dramatically enhances text fidelity and overall visual quality in generated images. This paper presents the methodology, experimental results, and the profound implications of TextPixs for the future of text-to-image synthesis.
