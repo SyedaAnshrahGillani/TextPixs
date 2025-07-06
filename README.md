@@ -293,8 +293,8 @@ If you find this research project helpful, please consider citing our work (deta
 ```bibtex
 @article{gillani2025enhancing,
   title={Enhancing Text Rendering in Text-to-Image Generation: A Novel Approach},
-  author={Gillani, Syeda Anshrah and Mujeeb, Umema and Ali, Maheen and Baig, Mirza Samad Ahmed},
-  journal={DRAFT SUBMITTED ON 17 JANUARY 2025 TO FYP COMMITTEE FOR FYP1 EVALUATION PURPOSES},
+  author={Gillani, Syeda Anshrah and Baig, Mirza Samad Ahmed and Khan, Osama Ahmed and Mujeeb, Umema and Ali, Maheen},
+  journal={Final Research paper submitted for evaluation CVPR 2025 submission},
   year={2025}
 }
 ```
