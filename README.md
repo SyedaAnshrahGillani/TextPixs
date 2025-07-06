@@ -132,7 +132,7 @@ To set up and run the Gradio demo for TextPixs, follow these steps:
 
 2.  **Navigate to the Gradio demo directory**:
     ```bash
-    cd gradio_demo/textpixs_image_generator
+    cd app
     ```
 
 3.  **Create and activate a virtual environment** (recommended):
@@ -293,18 +293,11 @@ If you find this research project helpful, please consider citing our work (deta
 ```bibtex
 @article{gillani2025enhancing,
   title={Enhancing Text Rendering in Text-to-Image Generation: A Novel Approach},
-  author={Gillani, Syeda Anshrah and Baig, Mirza Samad Ahmed and Khan, Osama Ahmed and Mujeeb, Umema and Ali, Maheen},
+  author={Gillani, Syeda Anshrah Gillani, Mirza Samad Ahmed and Khan, Osama Ahmed Khan, Shahid Munir Shah, Umema Mujeeb, Maheen Ali},
   journal={Final Research paper submitted for evaluation CVPR 2025 submission},
   year={2025}
 }
 ```
-Copyright (c) 2025 Syeda Anshrah Gillani
-All rights reserved.
-
-This software is proprietary and confidential.
-No part of this codebase may be copied, modified, distributed,
-published, or used in whole or in part without the prior written
-permission of the copyright holder.
 Copyright (c) 2025 Syeda Anshrah Gillani
 All rights reserved.
 
