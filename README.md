@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="./assets/logo.png" width="900" alt="TextPixs Logo Placeholder"/>
 </p>
