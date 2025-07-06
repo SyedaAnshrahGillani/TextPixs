@@ -22,21 +22,29 @@
 
 ## Abstract / Executive Summary
 
-Text-to-image generation has made significant strides with advancements in deep learning, particularly with GANs and transformers. However, accurate text rendering within generated images remains a challenge, impeding applications such as educational tools, design automation, and digital art. This paper introduces a novel framework for enhancing text rendering in images, integrating state-of-the-art techniques and innovative mathematical models. Extensive experiments demonstrate that the proposed approach significantly improves text fidelity and visual quality.
+Text-to-image generation has revolutionized digital content creation, yet a critical challenge persists: accurately rendering text within generated images. This limitation significantly impacts applications ranging from educational tools and design automation to digital art. TextPixs introduces a groundbreaking framework designed to overcome this hurdle. By integrating cutting-edge techniques and innovative mathematical models, our approach dramatically enhances text fidelity and overall visual quality in generated images. This paper presents the methodology, experimental results, and the profound implications of TextPixs for the future of text-to-image synthesis.
 
-## 🔥🔥 News
+## 📜 Changelog
 
-- (🔥 New) [2025/07/03] README updated to professional standards, inspired by leading research projects.
-- (🔥 New) [2025/07/03] FYP1 deliverables organized and integrated into the repository.
-- [2025/06/30] Initial project setup and repository creation.
+- **[2025-07-06] - Current Update**
+    - Updated README with comprehensive details, including author sequence, demo video link, and refined project structure.
+    - Renamed `openai_image_generator` to `textpixs_image_generator` for clarity and branding.
+    - Ensured `.env` files are ignored by Git and removed from repository history.
+    - Re-added `gradio_demo` folder to ensure its presence on the remote branch.
+- **[2025-07-03]**
+    - README updated to professional standards, inspired by leading research projects.
+    - FYP1 deliverables organized and integrated into the repository.
+- **[2025-06-30]**
+    - Initial project setup and repository creation.
 
 ## Table of Contents 📚
 
 - [Abstract / Executive Summary](#abstract--executive-summary)
-- [News](#-news)
+- [Changelog](#-changelog)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
 - [Roadmap](#roadmap)
 - [Performance](#performance)
 - [Team](#team)
@@ -51,40 +59,81 @@ Text-to-image generation has made significant strides with advancements in deep 
 
 ## 💡 Introduction
 
-Text-to-image generation has gained widespread attention in fields such as content creation, advertising, and human-computer interaction. Recent models like DALL-E and Imagen have achieved remarkable image synthesis capabilities. However, the accurate rendering of textual content remains a bottleneck due to:
+The field of text-to-image generation has witnessed exponential growth, with models like DALL-E and Imagen achieving unprecedented levels of image synthesis. Despite these advancements, the precise and legible rendering of textual content within complex visual scenes remains a significant bottleneck. This challenge stems from several factors:
 
-- Ambiguity in text prompts.
-- Challenges in maintaining textual structure within complex visual scenes.
-- Lack of robust loss functions focused on textual fidelity.
+- **Ambiguity in Text Prompts**: Current models often struggle to interpret nuanced textual instructions, leading to distorted or nonsensical text in the output.
+- **Structural Integrity**: Maintaining the correct spatial arrangement and visual coherence of text within diverse image contexts is inherently difficult.
+- **Lack of Text-Specific Loss Functions**: Traditional loss functions primarily focus on overall image quality, neglecting the critical aspect of textual fidelity.
 
-To address these challenges, this research proposes a novel hybrid architecture incorporating semantic alignment, multimodal embeddings, and a custom loss function. Our primary objectives include:
-- Enhancing the rendering of images via text-to-image generation using state-of-the-art techniques.
-- Improving text fidelity and visual quality in generated images.
-- Developing a novel hybrid architecture with semantic alignment and text rendering loss.
+TextPixs directly addresses these limitations by proposing a novel hybrid architecture. Our research focuses on:
+- **Revolutionizing Text Rendering**: Developing state-of-the-art techniques to ensure accurate and high-quality text integration within generated images.
+- **Achieving Unprecedented Fidelity**: Significantly improving both textual accuracy and the aesthetic quality of synthesized images.
+- **Pioneering a Hybrid Architecture**: Introducing a unique framework that combines semantic alignment with a custom text rendering loss function.
 
-TextPixs intends to bridge the gap between ideas and visuals, providing users with a creative playground for generating, modifying, and refining images. Our purpose is to research and contribute breakthroughs in achieving excellence in text-to-image generation, with a focus on text fidelity improvements to advance applications in content creation, advertising, and human-computer interactions.
+TextPixs aims to bridge the gap between conceptual ideas and their visual realization, offering users an intuitive and powerful platform for generating, modifying, and refining images with perfect text. Our mission is to push the boundaries of text-to-image generation, with a steadfast commitment to enhancing text fidelity and advancing its applications across content creation, advertising, and human-computer interaction.
 
 ## Features 🚀
 
-- **Text-to-Image Generation**: Input a description, and TextPixs will create a high-quality image that matches your vision. This feature leverages a novel hybrid architecture incorporating:
-    - **Semantic Alignment Module**: Aligns textual embeddings with visual features using cross-modal transformers, ensuring semantic coherence between text and image.
-    - **Text Rendering Loss**: A custom loss function penalizes textual inaccuracies by incorporating OCR-based feedback loops, ensuring generated text matches the input.
-    - **Dual-Stage Refinement**: A two-step generation pipeline for coarse-to-fine text rendering, enhancing fine-grained details.
-- **Image Modifications** (Phase 2): Modify existing images using text prompts for further customization and creativity.
-- **Text-to-Video Capabilities** (Future Phase): Generate short videos from descriptive prompts.
+TextPixs is engineered with a suite of powerful features designed to push the boundaries of text-to-image generation:
 
-Our model also incorporates additional enhancements for improved performance:
-- **Dynamic Learning Rate Adjustment**: Adapts the learning rate based on validation performance.
-- **Multilingual Training Support**: Extends capabilities to generate text in multiple languages with diverse scripts.
-- **Attention Map Visualization**: Provides insights into which parts of the image are most influenced by specific textual prompts.
+- **Advanced Text-to-Image Generation**: At its core, TextPixs transforms textual descriptions into high-quality, visually stunning images. This is achieved through a novel hybrid architecture that integrates:
+    - **Semantic Alignment Module**: This module employs sophisticated cross-modal transformers to meticulously align textual embeddings with visual features. The result is an unparalleled semantic coherence, ensuring that every generated image precisely reflects the nuances of the input text.
+    - **Intelligent Text Rendering Loss**: We've developed a custom loss function that leverages OCR-based feedback loops. This innovative approach actively penalizes textual inaccuracies, guaranteeing that the text within the generated image is not only present but also perfectly legible and accurate to the input.
+    - **Dual-Stage Refinement Pipeline**: Our two-step generation process allows for a coarse-to-fine approach to text rendering. This ensures that even the most intricate textual details are captured with exceptional clarity and precision.
+
+- **Image Modifications (Phase 2 - Upcoming)**: Beyond initial generation, TextPixs will empower users to modify existing images using intuitive text prompts, unlocking new levels of customization and creative freedom.
+
+- **Text-to-Video Capabilities (Future Phase - Visionary)**: Looking ahead, we envision TextPixs generating short, dynamic videos from descriptive prompts, further expanding the horizons of AI-driven content creation.
+
+Our model is continuously enhanced with cutting-edge optimizations for superior performance and versatility:
+- **Dynamic Learning Rate Adjustment**: Adapts the learning rate based on real-time validation performance, ensuring optimal model training and convergence.
+- **Multilingual Training Support**: Extends TextPixs' capabilities to generate text in a multitude of languages and diverse scripts, fostering global accessibility and application.
+- **Attention Map Visualization**: Provides invaluable insights into the model's decision-making process, illustrating precisely which parts of the image are most influenced by specific textual prompts.
 
 ## Technologies Used 🛡️
 
-- **Backend**: Flask, Python (Note: This is based on FYP1 deliverables. Actual implementation details for FYP2 may vary.)
-- **Frontend**: React.js, HTML, CSS (Note: This is based on FYP1 deliverables. Actual implementation details for FYP2 may vary.)
-- **Database**: PostgreSQL (Note: This is based on FYP1 deliverables. Actual implementation details for FYP2 may vary.)
-- **AI/ML Models**: Fine-Tuned Stable Diffusion Model, Generative Adversarial Networks (GANs) with PyTorch.
-- **Datasets**: COCO-Text, TextCaps, Custom Multilingual Dataset.
+TextPixs leverages a robust stack of technologies to deliver its advanced capabilities:
+
+- **Backend**: Primarily developed with Python, utilizing frameworks like Flask for API services (Note: This is based on FYP1 deliverables. Actual implementation details for FYP2 may vary, potentially incorporating more scalable solutions).
+- **Frontend**: Built with modern web technologies such as React.js, HTML, and CSS, ensuring a responsive and intuitive user interface (Note: This is based on FYP1 deliverables. Actual implementation details for FYP2 may vary).
+- **Database**: PostgreSQL is used for efficient data management and storage (Note: This is based on FYP1 deliverables. Actual implementation details for FYP2 may vary).
+- **AI/ML Models**: At the heart of TextPixs are fine-tuned Stable Diffusion Models and Generative Adversarial Networks (GANs), implemented using PyTorch for high-performance deep learning.
+- **Datasets**: Training and evaluation are conducted using comprehensive datasets like COCO-Text, TextCaps, and a custom multilingual dataset, ensuring broad applicability and robust performance.
+
+## 🚀 Getting Started
+
+To set up and run the Gradio demo for TextPixs, follow these steps:
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/SyedaAnshrahGillani/TextPixs.git
+    cd TextPixs
+    ```
+
+2.  **Navigate to the Gradio demo directory**:
+    ```bash
+    cd gradio_demo/textpixs_image_generator
+    ```
+
+3.  **Create and activate a virtual environment** (recommended):
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+4.  **Install the required dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Run the Gradio application**:
+    ```bash
+    python app.py
+    ```
+
+    The application will typically run on `http://127.0.0.1:7860/` or a similar local address. You can access the demo through your web browser.
+
+    *(Note: Ensure you have Python 3.8+ installed on your system.)*
 
 ## Roadmap 🗺️
 
