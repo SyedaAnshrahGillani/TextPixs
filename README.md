@@ -16,7 +16,7 @@
   <img src="./assets/results.png" width="90%" alt="TextPixs Results Image"/>
 </p>
 
-## 🎥 Demo Video
+## 🎥 Demo Video (8 mins) - Redirects to Drive
 
 [![Watch the video](./Demo%20recording/Thumbnail_demo.png)](https://drive.google.com/file/d/1b8f2pu2OKTieu2JUkgql-7dF8zCXXSBu/view?usp=sharing)
 
