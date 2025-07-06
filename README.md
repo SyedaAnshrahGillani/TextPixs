@@ -18,7 +18,9 @@
 
 ## 🎥 Demo Video
 
-[Watch the demo video on Google Drive](https://drive.google.com/file/d/1409aJytWW4xUxZkxs1JREmj1nK0RTI2E/view?usp=sharing)
+[![Watch the video](https://via.placeholder.com/480x270?text=Video+Thumbnail)](https://drive.google.com/file/d/1409aJytWW4xUxZkxs1JREmj1nK0RTI2E/view?usp=sharing)
+
+*(Note: Please replace `https://via.placeholder.com/480x270?text=Video+Thumbnail` with an actual thumbnail image URL for the video.)*
 
 ## Abstract / Executive Summary
 
