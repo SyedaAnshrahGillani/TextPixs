@@ -16,6 +16,12 @@
   <img src="./assets/teaser.png" width="90%" alt="TextPixs Teaser Image Placeholder"/>
 </p>
 
+## 🎥 Demo Video
+
+<p align="center">
+  <video src="./Demo recording/demo1_compressed.mp4" controls width="80%"></video>
+</p>
+
 ## Abstract / Executive Summary
 
 Text-to-image generation has made significant strides with advancements in deep learning, particularly with GANs and transformers. However, accurate text rendering within generated images remains a challenge, impeding applications such as educational tools, design automation, and digital art. This paper introduces a novel framework for enhancing text rendering in images, integrating state-of-the-art techniques and innovative mathematical models. Extensive experiments demonstrate that the proposed approach significantly improves text fidelity and visual quality.
@@ -108,27 +114,22 @@ Our proposed method demonstrates significant improvements over existing models i
 
 ## Team 👥
 
-**Internal Supervisor**: Sir Osama Ahmed Khan
-**External Supervisor & Sponsor**: **Mirza Samad Ahmed Baig** (mirzasamadahmedbaig@gmail.com)
-
-**Team Members**:
-- **Syeda Anshrah Gillani (Group Leader)** (1337-2021)
-- Umema Mujeeb (2396-2021)
-- Maheen Ali (1589-2021)
+**Authors**:
+Syeda Anshrah Gillani<sup>1*</sup>, Mirza Samad Ahmed Baig<sup>3</sup>, Osama Ahmed Khan<sup>1</sup>, Shahid Munir Shah<sup>1</sup>, Umeema Mujeeb<sup>1</sup>, Maheen Ali<sup>1</sup>
 
 ## FYP1 Deliverables 📦
 
 The following key deliverables from FYP1 are available in the `docs/fyp1` directory:
 
-- **FYP 1 Details**: `fyp1_details.pdf`
-- **Project Plan (Gantt Chart)**: `project_plan.pdf`
-- **Gap Analysis**: `gap_analysis.pdf`
-- **Demo Notebook**: `demo.ipynb`
-- **FYP1 Presentation**: `fyp1_presentation.pptx`
-- **Presentation Template**: `presentation_template.pptx`
-- **Model Training Recording**: `model_training_recording.mov`
-- **Standee Design**: `standee.pdf`
-- **Image Asset**: `image.png`
+- **FYP 1 Details**: `FYP 1 Details - TextPixs.pdf`
+- **Gap Analysis**: `Gap Analysis - Text Pixs.pdf`
+- **Project Plan (Gantt Chart)**: `Project Plan - Text Pixs - GANTT CHART ~ FYP ~ Anshrah.pdf`
+- **Report - Latex - 3 Chapters**: `Report - Latex - 3 Chapters - TextPixs .pdf`
+- **Research Paper Draft - Latex**: `Research Paper Draft - Latex - Text Pixs.pdf`
+- **Selection of Publication Venue**: `Selection of Publication Venue - TextPixs - Latex.pdf`
+- **Sign Off Sheet**: `Sign Off Sheet - Text Pixs.pdf`
+- **FYP1 Presentation**: `TextPixs FYP1.pdf`
+- **Standee Design**: `Textpixs-STANDEE-3.pdf`
 
 ## Project Structure 📁
 
@@ -136,14 +137,17 @@ The repository is organized as follows:
 
 ```
 TextPixs/
-├── docs/                 # Project documentation and deliverables
-│   ├── assets/           # Images and other assets for README and documentation
-│   └── fyp1/             # Contains all deliverables from FYP1
-├── .github/              # GitHub Actions workflows and configurations
-├── LICENSE               # Project license
-└── README.md             # This README file
+├── assets/                 # Images for README and documentation
+├── Demo recording/         # Demo videos
+├── docs/                   # Project documentation and deliverables
+│   ├── fyp1/               # Contains all deliverables from FYP1
+│   └── proposal/           # Contains project proposal documents
+├── gradio_demo/            # Gradio demo application
+│   └── openai_image_generator/ # OpenAI image generator demo
+├── .github/                # GitHub Actions workflows and configurations
+├── LICENSE                 # Project license
+└── README.md               # This README file
 ```
-*(Note: Additional directories for code (e.g., `src/`, `backend/`, `frontend/`) will be added as the implementation phase of FYP2 progresses.)*
 
 ## 💪 To-Do List
 
