@@ -355,7 +355,7 @@ css = """
 body{align-items: center;}
 h1{text-align:center}
 """
-with gr.Blocks(css=css, title="Sana", delete_cache=(86400, 86400)) as demo:
+with gr.Blocks(css=css, title="TextPixs", delete_cache=(86400, 86400)) as demo:
     gr.Markdown(title)
     gr.HTML(DESCRIPTION)
     gr.DuplicateButton(
