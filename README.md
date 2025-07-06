@@ -18,7 +18,7 @@
 
 ## 🎥 Demo Video
 
-[Click here to watch the demo video](./Demo%20recording/demo1_compressed.mp4)
+[Watch the demo video on Google Drive](https://drive.google.com/file/d/1409aJytWW4xUxZkxs1JREmj1nK0RTI2E/view?usp=sharing)
 
 ## Abstract / Executive Summary
 
