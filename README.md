@@ -24,11 +24,11 @@
 
 Text-to-image generation has revolutionized digital content creation, yet a critical challenge persists: accurately rendering text within generated images. This limitation significantly impacts applications ranging from educational tools and design automation to digital art. TextPixs introduces a groundbreaking framework designed to overcome this hurdle. By integrating cutting-edge techniques and innovative mathematical models, our approach dramatically enhances text fidelity and overall visual quality in generated images. This paper presents the methodology, experimental results, and the profound implications of TextPixs for the future of text-to-image synthesis.
 
-## 📜 Changelog
+## 🔥 Changelog
 
 - **[2025-07-06] - Current Update**
     - Updated README with comprehensive details, including author sequence, demo video link, and refined project structure.
-    - Renamed `openai_image_generator` to `textpixs_image_generator` for clarity and branding.
+    - Renamed `image_generator` to `textpixs_image_generator` for clarity and branding.
     - Ensured `.env` files are ignored by Git and removed from repository history.
     - Re-added `gradio_demo` folder to ensure its presence on the remote branch.
 - **[2025-07-03]**
