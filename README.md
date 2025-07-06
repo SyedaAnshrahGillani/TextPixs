@@ -18,9 +18,7 @@
 
 ## 🎥 Demo Video
 
-<p align="center">
-  <video src="./Demo recording/demo1_compressed.mp4" controls width="80%"></video>
-</p>
+[Click here to watch the demo video](./Demo%20recording/demo1_compressed.mp4)
 
 ## Abstract / Executive Summary
 
