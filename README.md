@@ -4,7 +4,7 @@
 
 # 🎨✨ TextPixs: Enhancing Text Rendering in Text-to-Image Generation: A Novel Approach
 
-### <div align="center"> Your Project Status/Affiliation (e.g., FYP 2025) <div>
+### <div align="center"> Final Year Project 2025 <div>
 
 <div align="center">
   <a href="https://github.com/SyedaAnshrahGillani/TextPixs"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github"></a> &ensp;
