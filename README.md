@@ -143,7 +143,7 @@ TextPixs/
 │   ├── fyp1/               # Contains all deliverables from FYP1
 │   └── proposal/           # Contains project proposal documents
 ├── gradio_demo/            # Gradio demo application
-│   └── openai_image_generator/ # OpenAI image generator demo
+│   └── textpixs_image_generator/ # TextPixs image generator demo
 ├── .github/                # GitHub Actions workflows and configurations
 ├── LICENSE                 # Project license
 └── README.md               # This README file
