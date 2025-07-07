@@ -53,8 +53,7 @@ Our Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA) framework 
 - 🔥 Add contact emails and highlight external supervisor
 - 🔥 Integrate research paper details and further enhance README professionalism
 - 🔥 Update FYP1 deliverables with new files and remove old ones
-- 🔥 Add Sana Gradio demo
-- 🔥 Tailor Gradio demo for TextPixs research project
+- 🔥 Tailor TextPixs Gradio demo
 - 🔥 Merge pull request #1 from SyedaAnshrahGillani/sana-gradio-demo
 - 🔥 Update README with logo and teaser images
 - 🔥 Update README with correct image paths
