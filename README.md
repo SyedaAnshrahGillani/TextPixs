@@ -22,28 +22,23 @@
 
 *(Clicking on the thumbnail will open the demo video in a new tab.)*
 
-## GCDA Text Generation Process
+## Abstract / Executive Summary
+
+The most recent efflorescence of text-to-image diffusion models has brought an entire new epoch to digital content creation, showing a mind-boggling capacity to generate photorealistic and artistically variable imagery based on the semantics of natural language descriptions. Nonetheless, a high and constant drawback of such models has always been the inability to produce a coherent, legible, and properly spelt text in generated images, which majorly stiffens applicability of such models in various real life instances such as advertising, education, and even creative design. This paper addresses this critical shortcoming by introducing a novel, multi-pronged framework designed to seamlessly integrate orthographic precision into the generative process while maintaining high-quality image synthesis capabilities. Our proposed methodology, Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA), enhances a standard diffusion backbone with three synergistic and carefully designed components: (1) a dual-stream text encoder that processes both semantic contextual information and explicit visual glyph representations to create a rich, character-aware embedding of the input text; (2) a character-aware attention mechanism guided by a novel attention segregation loss that encourages the model to allocate distinct spatial focus to individual characters, preventing fusion and distortion artifacts; and (3) an OCR-in-the-loop fine-tuning stage that employs a comprehensive text perceptual loss to directly optimize for legibility and spelling accuracy. Using large-scale experimentation on standard benchmark data such as MARIO-10M and T2I-CompBench, our model achieves a new state of the art in all the developed evaluation metrics within a model, with significantly better results in character-based measures of text-rendering (Character Error Rate: 0.08 vs 0.21 of those found in previous best, Word Error Rate: 0.15 vs 0.25) and human evaluations, as well as competitive image s... [truncated]
+
+## Our Proposed GCDA Methodology
 
 <p align="center" border-radius="10px">
-  <img src="./assets/gcda_text_generation_process.png" width="90%" alt="GCDA Text Generation Process"/>
+  <img src="./assets/gcda_text_generation_process.png" width="90%" alt="Our Proposed GCDA Methodology"/>
 </p>
-
-## Abstract / Executive Summary
 
 The most recent efflorescence of text-to-image diffusion models has brought an entire new epoch to digital content creation, showing a mind-boggling capacity to generate photorealistic and artistically variable imagery based on the semantics of natural language descriptions. Nonetheless, a high and constant drawback of such models has always been the inability to produce a coherent, legible, and properly spelt text in generated images, which majorly stiffens applicability of such models in various real life instances such as advertising, education, and even creative design. This paper addresses this critical shortcoming by introducing a novel, multi-pronged framework designed to seamlessly integrate orthographic precision into the generative process while maintaining high-quality image synthesis capabilities. Our proposed methodology, Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA), enhances a standard diffusion backbone with three synergistic and carefully designed components: (1) a dual-stream text encoder that processes both semantic contextual information and explicit visual glyph representations to create a rich, character-aware embedding of the input text; (2) a character-aware attention mechanism guided by a novel attention segregation loss that encourages the model to allocate distinct spatial focus to individual characters, preventing fusion and distortion artifacts; and (3) an OCR-in-the-loop fine-tuning stage that employs a comprehensive text perceptual loss to directly optimize for legibility and spelling accuracy. Using large-scale experimentation on standard benchmark data such as MARIO-10M and T2I-CompBench, our model achieves a new state of the art in all the developed evaluation metrics within a model, with significantly better results in character-based measures of text-rendering (Character Error Rate: 0.08 vs 0.21 of those found in previous best, Word Error Rate: 0.15 vs 0.25) and human evaluations, as well as competitive image s... [truncated]
 
 ## 🔥 Changelog
 
-- **[2025-07-06] - Current Update**
-    - Updated README with comprehensive details, including author sequence, demo video link, and refined project structure.
-    - Renamed `image_generator` to `textpixs_image_generator` for clarity and branding.
-    - Ensured `.env` files are ignored by Git and removed from repository history.
-    - Re-added `gradio_demo` folder to ensure its presence on the remote branch.
-- **[2025-07-03]**
-    - README updated to professional standards, inspired by leading research projects.
-    - FYP1 deliverables organized and integrated into the repository.
-- **[2025-06-30]**
-    - Initial project setup and repository creation.
+- 🔥 **[2025-07-07] - Current Update**
+    - Moved and renamed the GCDA methodology diagram for better clarity.
+    - Updated the changelog section for improved readability and conciseness.
 
 ## Table of Contents 📚
 
