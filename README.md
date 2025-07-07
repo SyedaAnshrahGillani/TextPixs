@@ -22,6 +22,12 @@
 
 *(Clicking on the thumbnail will open the demo video in a new tab.)*
 
+## GCDA Text Generation Process
+
+<p align="center" border-radius="10px">
+  <img src="./assets/Screenshot 2025-07-07 at 1.32.53 PM.png" width="90%" alt="GCDA Text Generation Process"/>
+</p>
+
 ## Abstract / Executive Summary
 
 The most recent efflorescence of text-to-image diffusion models has brought an entire new epoch to digital content creation, showing a mind-boggling capacity to generate photorealistic and artistically variable imagery based on the semantics of natural language descriptions. Nonetheless, a high and constant drawback of such models has always been the inability to produce a coherent, legible, and properly spelt text in generated images, which majorly stiffens applicability of such models in various real life instances such as advertising, education, and even creative design. This paper addresses this critical shortcoming by introducing a novel, multi-pronged framework designed to seamlessly integrate orthographic precision into the generative process while maintaining high-quality image synthesis capabilities. Our proposed methodology, Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA), enhances a standard diffusion backbone with three synergistic and carefully designed components: (1) a dual-stream text encoder that processes both semantic contextual information and explicit visual glyph representations to create a rich, character-aware embedding of the input text; (2) a character-aware attention mechanism guided by a novel attention segregation loss that encourages the model to allocate distinct spatial focus to individual characters, preventing fusion and distortion artifacts; and (3) an OCR-in-the-loop fine-tuning stage that employs a comprehensive text perceptual loss to directly optimize for legibility and spelling accuracy. Using large-scale experimentation on standard benchmark data such as MARIO-10M and T2I-CompBench, our model achieves a new state of the art in all the developed evaluation metrics within a model, with significantly better results in character-based measures of text-rendering (Character Error Rate: 0.08 vs 0.21 of those found in previous best, Word Error Rate: 0.15 vs 0.25) and human evaluations, as well as competitive image s... [truncated]
