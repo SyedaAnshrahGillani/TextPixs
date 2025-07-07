@@ -48,8 +48,7 @@ Our Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA) framework 
 - 🔥 Update README with FYP1 details
 - 🔥 Refine README for research project and update team roles
 - 🔥 Enhance README with abstract, project structure, and contact info
-- 🔥 Refine README to professional standards (Sana-inspired)
-- 🔥 Major README overhaul to match Sana's professional standard
+
 - 🔥 Add contact emails and highlight external supervisor
 - 🔥 Integrate research paper details and further enhance README professionalism
 - 🔥 Update FYP1 deliverables with new files and remove old ones
@@ -93,7 +92,7 @@ Our Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA) framework 
 - 🔥 Add untracked files and commit .DS_Store changes.
 - 🔥 Update README.md
 - 🔥 Update README.md
-- 🔥 Refactor: Rename Sana to TextPixs in app.py and add model/code architecture docs.
+
 - 🔥 Docs: Add README.md to app/ folder for code documentation.
 - 🔥 Merge pull request #4 from SyedaAnshrahGillani/feature/update-app-and-docs
 - 🔥 docs: update FYP2.pdf presentation
