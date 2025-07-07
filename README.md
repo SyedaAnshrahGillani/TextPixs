@@ -25,7 +25,7 @@
 ## GCDA Text Generation Process
 
 <p align="center" border-radius="10px">
-  <img src="./assets/Screenshot 2025-07-07 at 1.32.53 PM.png" width="90%" alt="GCDA Text Generation Process"/>
+  <img src="./assets/gcda_text_generation_process.png" width="90%" alt="GCDA Text Generation Process"/>
 </p>
 
 ## Abstract / Executive Summary
