@@ -11,23 +11,51 @@
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv"></a> &ensp;
 </div>
 
+💡 **TLDR: EXPLORE EVERYTHING YOU WANT HERE!**
+
+🚶 **BASIC:**
+
+*   **Demo:** [TextPixs Demo](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs) (Coming Soon!)
+*   **Model Zoo:** [Model Card](./model_card.md)
+*   **Inference:** [Getting Started](./README.md#🏁-getting-started)
+*   **Training:** [Training Guide](./README.md#-training)
+
 <p align="center">
   <img src="./assets/teaser.png" width="90%" alt="TextPixs Teaser Image"/>
 </p>
 
-## 💡 Introduction
+## 🔥 NEWS
 
-We introduce TextPixs, a novel framework for generating images with accurate and legible text. While existing text-to-image models excel at creating stunning visuals, they struggle with rendering text, limiting their use in many applications. TextPixs addresses this by integrating a **Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA)** model, which combines a deep understanding of both semantics and character-level details.
+*   (🔥 New) [2025/07/08] Upgraded README to next level!
+*   (🔥 New) [2025/07/08] Added new assets for README.
+*   (🔥 New) [2025/07/08] Enhanced README and created CHANGELOG.
+
+## 💡 INTRODUCTION
+
+We introduce TextPixs, a text-to-image framework that can efficiently generate images with accurate and legible text. TextPixs addresses a critical flaw in modern generative models, enabling new applications in advertising, design, and education. Core designs include:
+
+(1) **Dual-Stream Text Encoder:** Processes both the semantic meaning and visual characteristics of text.
+(2) **Character-Aware Attention:** Ensures individual characters are rendered clearly and without distortion.
+(3) **OCR-in-the-Loop Feedback:** An integrated OCR system reviews and refines the generated text for accuracy.
 
 <p align="center">
   <img src="./assets/results.png" width="90%" alt="TextPixs Results Image"/>
 </p>
 
-## 🔥 Key Innovations
+## 📊 PERFORMANCE
 
-- **Dual-Stream Text Encoder**: Simultaneously processes the meaning of the text and the visual appearance of its characters.
-- **Character-Aware Attention**: Ensures that individual letters are rendered distinctly and without distortion.
-- **OCR-in-the-Loop Feedback**: A built-in OCR system reviews and refines the generated text for accuracy.
+| Model | FID (↓) | CER (↓) | WER (↓) | Exact Match (%) (↑) |
+|---:|---:|---:|---:|---:|
+| DALL-E 2 | 13.9 | 0.45 | 0.58 | 18.5 |
+| Stable Diffusion 1.5 | 15.2 | 0.65 | 0.82 | 5.2 |
+| TextDiffuser-2 | 14.1 | 0.14 | 0.25 | 60.1 |
+| **TextPixs (Ours)** | **14.3** | **0.08** | **0.15** | **75.4** |
+
+<p align="center">
+  <img src="./assets/GCDA Performance Breakthrough - Figure 9 from research paper.png" width="90%" alt="Performance Breakthrough"/>
+</p>
+
+## 🔥 Key Innovations
 
 <p align="center">
   <img src="./assets/Single Stream vs Dual Stream.png" width="90%" alt="Single Stream vs Dual Stream"/>
@@ -41,47 +69,10 @@ We introduce TextPixs, a novel framework for generating images with accurate and
   <img src="./assets/Attention Problem - why characters merge.png" width="90%" alt="Attention Problem"/>
 </p>
 
-## 📊 Performance
-
-TextPixs significantly outperforms existing models in text rendering accuracy while maintaining high image quality.
-
-<p align="center">
-  <img src="./assets/GCDA Performance Breakthrough - Figure 9 from research paper.png" width="90%" alt="Performance Breakthrough"/>
-</p>
-
-| Model | FID (↓) | CER (↓) | WER (↓) | Exact Match (%) (↑) |
-|---|---|---|---|---|
-| DALL-E 2 | 13.9 | 0.45 | 0.58 | 18.5 |
-| Stable Diffusion 1.5 | 15.2 | 0.65 | 0.82 | 5.2 |
-| TextDiffuser-2 | 14.1 | 0.14 | 0.25 | 60.1 |
-| **TextPixs (Ours)** | **14.3** | **0.08** | **0.15** | **75.4** |
-
-## 🚀 Real-World Applications
-
-TextPixs opens up new possibilities for AI-generated content in various fields.
-
-<p align="center">
-  <img src="./assets/GCDA's Real world applications.png" width="90%" alt="Real-World Applications"/>
-</p>
-
 ## 🔮 Future Directions
-
-We are exploring several exciting avenues for future research.
 
 <p align="center">
   <img src="./assets/Future Research Directions Enabled by GCDA.png" width="90%" alt="Future Research"/>
-</p>
-
-## ⚙️ Technical Deep Dive
-
-Our two-stage training process is key to TextPixs' success.
-
-<p align="center">
-  <img src="./assets/Stage 1 - Foundational Training.png" width="90%" alt="Stage 1 Training"/>
-</p>
-
-<p align="center">
-  <img src="./assets/OCR in the loop Fine tuning Framework.png" width="90%" alt="OCR in the loop"/>
 </p>
 
 ## 🏁 Getting Started
@@ -106,7 +97,43 @@ To run the Gradio demo:
     python app_textpixs.py
     ```
 
-## 📖 Citation
+## 🏋️ Training
+
+To train TextPixs, you will need to prepare your data in the following format:
+
+```
+asset/example_data
+├── AAA.txt
+├── AAA.png
+├── BCC.txt
+├── BCC.png
+```
+
+Then, you can launch training with the following command:
+
+```bash
+bash train_scripts/train.sh \
+  configs/textpixs_config.yaml \
+  --data.data_dir="[asset/example_data]" \
+  --train.train_batch_size=32
+```
+
+## 💪 To-Do List
+
+- [ ] Release online Gradio demo.
+- [ ] Release pre-trained models.
+- [ ] Add support for more languages.
+- [ ] Explore video generation capabilities.
+
+## 🤗 ACKNOWLEDGEMENTS
+
+We thank the authors of the following papers and open-source projects for their valuable contributions to the field:
+
+*   [Sana](https://github.com/SyedaAnshrahGillani/Sana)
+*   [PixArt-α](https://github.com/PixArt-alpha/PixArt-alpha)
+*   [diffusers](https://github.com/huggingface/diffusers)
+
+## 📖 CITATION
 
 ```bibtex
 @article{gillani2025textpixs,
