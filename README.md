@@ -4,45 +4,50 @@
 
 # TextPixs: Glyph-Conditioned Diffusion with Character-Aware Attention and OCR-in-the-Loop Feedback for Accurate Text Rendering
 
+**CVPR 2025**
+
 <div align="center">
   <a href="https://github.com/SyedaAnshrahGillani/TextPixs"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github"></a> &ensp;
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv"></a> &ensp;
 </div>
 
-<p align="center" border-radius="10px">
+<p align="center">
+  <img src="./assets/teaser.png" width="90%" alt="TextPixs Teaser Image"/>
+</p>
+
+## 💡 Introduction
+
+We introduce TextPixs, a novel framework for generating images with accurate and legible text. While existing text-to-image models excel at creating stunning visuals, they struggle with rendering text, limiting their use in many applications. TextPixs addresses this by integrating a **Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA)** model, which combines a deep understanding of both semantics and character-level details.
+
+<p align="center">
   <img src="./assets/results.png" width="90%" alt="TextPixs Results Image"/>
 </p>
 
-## 🎥 Demo Video (8 mins)
+## 🔥 Key Innovations
 
-[![Watch the video](./Demo%20recording/Thumbnail_demo.png)](https://drive.google.com/file/d/1b8f2pu2OKTieu2JUkgql-7dF8zCXXSBu/view?usp=sharing)
+- **Dual-Stream Text Encoder**: Simultaneously processes the meaning of the text and the visual appearance of its characters.
+- **Character-Aware Attention**: Ensures that individual letters are rendered distinctly and without distortion.
+- **OCR-in-the-Loop Feedback**: A built-in OCR system reviews and refines the generated text for accuracy.
 
-*(Clicking on the thumbnail will open the demo video in a new tab.)*
-
-## Abstract
-
-Recent text-to-image diffusion models, while proficient at generating photorealistic imagery, consistently fail to render coherent and legible text. This limitation hinders their application in domains like advertising, education, and design. This paper introduces **TextPixs**, a novel framework that integrates orthographic precision into the generative process. Our methodology, **Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA)**, enhances a standard diffusion backbone with three synergistic components: a **dual-stream text encoder** for rich, character-aware embeddings; a **character-aware attention mechanism** to prevent textual artifacts; and an **OCR-in-the-loop fine-tuning stage** to optimize for legibility and spelling. TextPixs sets a new state-of-the-art on standard benchmarks, significantly reducing character and word error rates while maintaining high-fidelity image synthesis.
-
-## Key Features
-
-- **State-of-the-Art Text Rendering**: Achieves a Character Error Rate (CER) of 0.08 and a Word Error Rate (WER) of 0.15, a 43% improvement over previous models.
-- **High Exact Match Accuracy**: 75.4% of generated text is a perfect match, a 15.3% absolute improvement.
-- **Preserved Image Quality**: Maintains a competitive FID score of 14.3, ensuring high-quality images.
-- **Robust and Consistent**: Low standard deviations in testing show reliable performance.
-
-## The GCDA Framework
-
-<p align="center" border-radius="10px">
-  <img src="./assets/gcda_text_generation_process.png" width="90%" alt="Our Proposed GCDA Methodology"/>
+<p align="center">
+  <img src="./assets/Single Stream vs Dual Stream.png" width="90%" alt="Single Stream vs Dual Stream"/>
 </p>
 
-Our Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA) framework overcomes text rendering challenges with a multi-pronged approach:
+<p align="center">
+  <img src="./assets/Without and with segregation loss.png" width="90%" alt="Segregation Loss"/>
+</p>
 
-*   **Dual-Stream Text Encoder**: Processes both semantic and visual glyph information for a richer text representation.
-*   **Character-Aware Attention**: Allocates distinct spatial focus to individual characters, preventing garbled text.
-*   **OCR-in-the-Loop Fine-Tuning**: Uses an OCR model to iteratively refine text for legibility and accuracy.
+<p align="center">
+  <img src="./assets/Attention Problem - why characters merge.png" width="90%" alt="Attention Problem"/>
+</p>
 
-## Performance
+## 📊 Performance
+
+TextPixs significantly outperforms existing models in text rendering accuracy while maintaining high image quality.
+
+<p align="center">
+  <img src="./assets/GCDA Performance Breakthrough - Figure 9 from research paper.png" width="90%" alt="Performance Breakthrough"/>
+</p>
 
 | Model | FID (↓) | CER (↓) | WER (↓) | Exact Match (%) (↑) |
 |---|---|---|---|---|
@@ -51,7 +56,35 @@ Our Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA) framework 
 | TextDiffuser-2 | 14.1 | 0.14 | 0.25 | 60.1 |
 | **TextPixs (Ours)** | **14.3** | **0.08** | **0.15** | **75.4** |
 
-## Getting Started
+## 🚀 Real-World Applications
+
+TextPixs opens up new possibilities for AI-generated content in various fields.
+
+<p align="center">
+  <img src="./assets/GCDA's Real world applications.png" width="90%" alt="Real-World Applications"/>
+</p>
+
+## 🔮 Future Directions
+
+We are exploring several exciting avenues for future research.
+
+<p align="center">
+  <img src="./assets/Future Research Directions Enabled by GCDA.png" width="90%" alt="Future Research"/>
+</p>
+
+## ⚙️ Technical Deep Dive
+
+Our two-stage training process is key to TextPixs' success.
+
+<p align="center">
+  <img src="./assets/Stage 1 - Foundational Training.png" width="90%" alt="Stage 1 Training"/>
+</p>
+
+<p align="center">
+  <img src="./assets/OCR in the loop Fine tuning Framework.png" width="90%" alt="OCR in the loop"/>
+</p>
+
+## 🏁 Getting Started
 
 To run the Gradio demo:
 
@@ -73,7 +106,7 @@ To run the Gradio demo:
     python app_textpixs.py
     ```
 
-## Citation
+## 📖 Citation
 
 ```bibtex
 @article{gillani2025textpixs,
