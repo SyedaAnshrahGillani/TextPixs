@@ -44,14 +44,54 @@ We introduce TextPixs, a text-to-image framework that can efficiently generate i
   <img src="./assets/results.png" width="90%" alt="TextPixs Results Image"/>
 </p>
 
-## 📊 PERFORMANCE
+<div align="center">
 
-| Model | FID (↓) | CER (↓) | WER (↓) | Exact Match (%) (↑) |
-|---:|---:|---:|---:|---:|
-| DALL-E 2 | 13.9 | 0.45 | 0.58 | 18.5 |
-| Stable Diffusion 1.5 | 15.2 | 0.65 | 0.82 | 5.2 |
-| TextDiffuser-2 | 14.1 | 0.14 | 0.25 | 60.1 |
-| **TextPixs (Ours)** | **14.3** | **0.08** | **0.15** | **75.4** |
+<h2>📊 PERFORMANCE</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>FID (↓)</th>
+      <th>CER (↓)</th>
+      <th>WER (↓)</th>
+      <th>Exact Match (%) (↑)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DALL-E 2</td>
+      <td>13.9</td>
+      <td>0.45</td>
+      <td>0.58</td>
+      <td>18.5</td>
+    </tr>
+    <tr>
+      <td>Stable Diffusion 1.5</td>
+      <td>15.2</td>
+      <td>0.65</td>
+      <td>0.82</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>TextDiffuser-2</td>
+      <td>14.1</td>
+      <td>0.14</td>
+      <td>0.25</td>
+      <td>60.1</td>
+    </tr>
+    <tr style="background-color:#eafbf0; font-weight:bold;">
+      <td>TextPixs (Ours)</td>
+      <td>14.3</td>
+      <td>0.08</td>
+      <td>0.15</td>
+      <td>75.4 🏆</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
 
 <p align="center">
   <img src="./assets/GCDA Performance Breakthrough - Figure 9 from research paper.png" width="90%" alt="Performance Breakthrough"/>
