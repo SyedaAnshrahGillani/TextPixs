@@ -1,0 +1,68 @@
+# Changelog
+
+- 🔥 Initial commit
+- 🔥 Update README.md
+- 🔥 Create PULL_REQUEST_TEMPLATE.md
+- 🔥 PR Template & CODEOWNERS
+- 🔥 Organize FYP1 deliverables
+- 🔥 Update README with FYP1 details
+- 🔥 Refine README for research project and update team roles
+- 🔥 Enhance README with abstract, project structure, and contact info
+- 🔥 Add contact emails and highlight external supervisor
+- 🔥 Integrate research paper details and further enhance README professionalism
+- 🔥 Update FYP1 deliverables with new files and remove old ones
+- 🔥 Tailor TextPixs Gradio demo
+- 🔥 Merge pull request #1 from SyedaAnshrahGillani/sana-gradio-demo
+- 🔥 Update README with logo and teaser images
+- 🔥 Update README with correct image paths
+- 🔥 Update README.md
+- 🔥 Add logo and teaser images to assets directory
+- 🔥 feat: My local changes
+- 🔥 feat: Further updates
+- 🔥 feat: Adjust logo preview size in README
+- 🔥 feat: Further adjust logo preview size in README
+- 🔥 feat: Further adjust logo preview size in README
+- 🔥 Merge pull request #2 from SyedaAnshrahGillani/feature/my-changes
+- 🔥 feat: Consolidate all previous changes and add Gradio demo
+- 🔥 feat: Add demo video
+- 🔥 docs: Update README with author sequence, demo video, and updated sections
+- 🔥 refactor: Rename openai_image_generator to textpixs_image_generator and update README
+- 🔥 docs: Add .env to .gitignore
+- 🔥 docs: Update README to link demo video
+- 🔥 feat: Re-add gradio_demo folder
+- 🔥 docs: Enhance README with compelling content, changelog, and getting started guide
+- 🔥 docs: Update demo video link to Google Drive URL
+- 🔥 docs: Refine README, remove OpenAI mention, and add fire emoji to changelog
+- 🔥 docs: Update demo video format with thumbnail placeholder
+- 🔥 docs: Use actual thumbnail for demo video
+- 🔥 feat: Add Thumbnail_demo.png
+- 🔥 docs: Update demo video link and add new tab guide
+- 🔥 docs: Update demo video thumbnail
+- 🔥 docs: Add training_data folder with README and dataset acknowledgements
+- 🔥 docs: Add data links to training_data README
+- 🔥 docs: Remove inaccessible Hugging Face links from training_data README
+- 🔥 docs: Update project status in README
+- 🔥 Add results.png to README and update order of sections.
+- 🔥 Update README.md: Add GPU requirement, replace teaser image with results, update folder structure, and add copyright notice.
+- 🔥 Update LICENSE
+- 🔥 Add untracked files and commit all local changes.
+- 🔥 Update citation in README.md with correct author sequence and journal information.
+- 🔥 Merge branch 'final-gradio-demo'
+- 🔥 Add untracked files and commit .DS_Store changes.
+- 🔥 Update README.md
+- 🔥 Update README.md
+- 🔥 Docs: Add README.md to app/ folder for code documentation.
+- 🔥 Merge pull request #4 from SyedaAnshrahGillani/feature/update-app-and-docs
+- 🔥 docs: update FYP2.pdf presentation
+- 🔥 Merge pull request #5 from SyedaAnshrahGillani/Updating-files
+- 🔥 docs: move architecture markdown files to app directory
+- 🔥 Merge pull request #6 from SyedaAnshrahGillani/Updating-files
+- 🔥 docs: update README with new structure and details
+- 🔥 Merge branch 'main' into Readme-Structure-update
+- 🔥 Merge pull request #7 from SyedaAnshrahGillani/Readme-Structure-update
+- 🔥 feat: Add appendices
+- 🔥 docs: Add Shahid Munir Shah to citation in README
+- 🔥 docs: Add GCDA text generation process screenshot to README
+- 🔥 docs: Rename screenshot and update README
+- 🔥 docs: Update GCDA text generation process screenshot (cropped)
+- 🔥 docs: Adjust GCDA image placement and update changelog
