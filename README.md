@@ -310,7 +310,7 @@ We extend our gratitude to the following projects and individuals:
 
 | Contributor                 | Role                          | GitHub Profile                                               | Email                          |
 |----------------------------|-------------------------------|--------------------------------------------------------------|--------------------------------|
-| **Syeda Anshrah Gillani**  | Group Lead                    | [@SyedaAnshrahGillani](https://github.com/SyedaAnshrahGillani) | —                              |
+| **Syeda Anshrah Gillani**  | Group Lead                    | [@SyedaAnshrahGillani](https://github.com/SyedaAnshrahGillani) | syedaanshrah16@gmail.com                              |
 | **Mirza Samad Ahmed Baig** | External Supervisor & Sponsor | [@Mirza-Samad-Ahmed-Baig](https://github.com/Mirza-Samad-Ahmed-Baig) | mirzasamadcontact@gmail.com   |
 | **Osama Ahmed Khan**       | Internal Supervisor           | [@osamaahmedkhan](https://github.com/osamaahmedkhan)         | osama.ahmed@hamdard.edu.pk    |
 | **Shahid Munir Shah**      | Co-Supervisor                 | —                                                            | —                              |
