@@ -308,17 +308,18 @@ We extend our gratitude to the following projects and individuals:
 
 ### 👥 **Core Contributors**
 
-| Contributor | Role | GitHub |
-|------------|------|--------|
-| **Syeda Anshrah Gillani** | Group Lead | [@SyedaAnshrahGillani](https://github.com/SyedaAnshrahGillani) |
-| **Mirza Samad Ahmed Baig** | External Supervisor & Sponsor | |
-| **Osama Ahmed Khan** | Internal Supervisor | |
-| **Shahid Munir Shah** | Co-Supervisor | |
-| **Umema Mujeeb** | Research Assistant | |
-| **Maheen Ali** | Research Assistant | |
+| Contributor                 | Role                          | GitHub Profile                                               | Email                          |
+|----------------------------|-------------------------------|--------------------------------------------------------------|--------------------------------|
+| **Syeda Anshrah Gillani**  | Group Lead                    | [@SyedaAnshrahGillani](https://github.com/SyedaAnshrahGillani) | —                              |
+| **Mirza Samad Ahmed Baig** | External Supervisor & Sponsor | [@Mirza-Samad-Ahmed-Baig](https://github.com/Mirza-Samad-Ahmed-Baig) | mirzasamadcontact@gmail.com   |
+| **Osama Ahmed Khan**       | Internal Supervisor           | [@osamaahmedkhan](https://github.com/osamaahmedkhan)         | osama.ahmed@hamdard.edu.pk    |
+| **Shahid Munir Shah**      | Co-Supervisor                 | —                                                            | —                              |
+| **Umema Mujeeb**           | Research Assistant            | —                                                            | —                              |
+| **Maheen Ali**             | Research Assistant            | [@EngrMaheenAli](https://github.com/EngrMaheenAli)           | maheenasif494@gmail.com       |
 
-### 🏛️ **Institutional Support**
-We thank our institution for providing the computational resources and research environment that made this work possible.
+
+### 🏛️ **Institutional Context**
+This research was conducted as part of an academic program and reflects the independent work and contributions of the project team.
 
 ---
 
