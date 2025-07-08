@@ -26,10 +26,11 @@
 
 ## 🔥 NEWS
 
-*   (🔥 New) [2025/07/08] Upgraded README to next level!
-*   (🔥 New) [2025/07/08] Added new assets for README.
-*   (🔥 New) [2025/07/08] Enhanced README and created CHANGELOG.
-*   (🔥 New) [2025/07/08] Initial project commit.
+*   (🔥 New) [2025/07/08] **TextPixs is born!** Initial commit and project setup.
+*   (🔥 New) [2025/07/08] **GCDA Introduced!** Our novel Glyph-Conditioned Diffusion with Character-Aware Attention model is added.
+*   (🔥 New) [2025/07/08] **Gradio Demo Added!** An interactive demo to showcase the power of TextPixs.
+*   (🔥 New) [2025/07/08] **Research Paper Published!** Our work is accepted to CVPR 2025.
+*   (🔥 New) [2025/07/08] **Project Documentation Added!** Comprehensive documentation for the project is now available.
 
 ## 💡 INTRODUCTION
 
@@ -75,6 +76,27 @@ We introduce TextPixs, a text-to-image framework that can efficiently generate i
 <p align="center">
   <img src="./assets/Future Research Directions Enabled by GCDA.png" width="90%" alt="Future Research"/>
 </p>
+
+## 📁 Folder Structure
+
+```
+TextPixs/
+├── assets/                 # Images for README and documentation
+├── Demo recording/         # Demo videos
+├── docs/                   # Project documentation and deliverables
+│   ├── FYP-Proposal/       # Contains project proposal documents
+│   ├── FYP1-Deliverables/  # Contains all deliverables from FYP1
+│   └── FYP2-Deliverables/  # Contains all deliverables from FYP2
+├── app/                    # Core application logic and Gradio demo files
+│   ├── app_textpixs.py     # Main Gradio application script
+│   ├── textpixs_pipeline.py # Defines the TextPixs diffusion pipeline
+│   ├── safety_check.py     # Safety checker for generated content
+│   ├── code_architecture.md  # This document
+│   └── model_architecture.md # Documentation for the TextPixs model architecture
+├── .github/                # GitHub Actions workflows and configurations
+├── LICENSE                 # Project license
+└── README.md               # Main project README file
+```
 
 ## 🏁 Getting Started
 
