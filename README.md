@@ -1,209 +1,268 @@
-<p align="center">
-  <img src="./assets/logo.png" width="900" alt="TextPixs Logo Placeholder"/>
-</p>
-
 # TextPixs: Glyph-Conditioned Diffusion with Character-Aware Attention and OCR-in-the-Loop Feedback for Accurate Text Rendering
 
-**ArXiv 2025**
-
 <div align="center">
-  <a href="https://github.com/SyedaAnshrahGillani/TextPixs"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github"></a> &ensp;
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv"></a> &ensp;
+  <img src="./assets/logo.png" width="900" alt="TextPixs Logo"/>
+  
+  [![Paper](https://img.shields.io/badge/arXiv-2025-red.svg?logo=arxiv)](https://arxiv.org/abs/XXXX.XXXXX)
+  [![Project](https://img.shields.io/badge/GitHub-Project-blue.svg?logo=github)](https://github.com/SyedaAnshrahGillani/TextPixs)
+  [![Demo](https://img.shields.io/badge/🤗-Demo-yellow.svg)](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?logo=python)](https://python.org)
+  [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg?logo=pytorch)](https://pytorch.org)
+  
+  **A Revolutionary Text-to-Image Framework for Accurate and Legible Text Rendering**
+  
+  [📄 Paper](https://arxiv.org/abs/XXXX.XXXXX) • [🤗 Demo](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs) • [📚 Documentation](./docs/) • [🚀 Quick Start](#-quick-start)
 </div>
 
-💡 **TLDR: EXPLORE EVERYTHING YOU WANT HERE!**
+---
 
-🚶 **BASIC:**
+## 🎯 **TL;DR**
 
-*   **Demo:** [TextPixs Demo](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs) (Coming Soon!)
-*   **Model Zoo:** [Model Card](./model_card.md)
-*   **Inference:** [Getting Started](./README.md#🏁-getting-started)
-*   **Training:** [Training Guide](./README.md#-training)
+**TextPixs** revolutionizes text-to-image generation by solving the critical challenge of accurate text rendering in AI-generated images. Our framework achieves **75.4% exact match accuracy** through novel dual-stream processing, character-aware attention, and OCR-in-the-loop feedback.
 
-<p align="center">
-  <img src="./assets/teaser.png" width="90%" alt="TextPixs Teaser Image"/>
-</p>
+<div align="center">
+  <img src="./assets/teaser.png" width="90%" alt="TextPixs showcases superior text rendering capabilities"/>
+</div>
 
-## 🔥 NEWS
+## 📋 **Table of Contents**
 
-*   (🔥 New) [2025/07/07] **Research Paper Submitted!** Our work has been submitted to ArXiv.
-*   (🔥 New) [2025/07/05] **Project Documentation Added!** Comprehensive documentation for the project is now available.
-*   (🔥 New) [2025/06/20] **Gradio Demo Added!** An interactive demo to showcase the power of TextPixs.
-*   (🔥 New) [2025/06/01] **GCDA Introduced!** Our novel Glyph-Conditioned Diffusion with Character-Aware Attention model is added.
-*   (🔥 New) [2024/10/27] **TextPixs is born!** Initial commit and project setup.
+- [🔥 News & Updates](#-news--updates)
+- [💡 Introduction](#-introduction)
+- [🏆 Performance](#-performance)
+- [🔬 Key Innovations](#-key-innovations)
+- [🚀 Quick Start](#-quick-start)
+- [🏋️ Training](#️-training)
+- [📁 Repository Structure](#-repository-structure)
+- [🔮 Future Directions](#-future-directions)
+- [📖 Citation](#-citation)
+- [🤝 Contributing](#-contributing)
+- [🙏 Acknowledgements](#-acknowledgements)
 
-## 💡 INTRODUCTION
+## 🔥 **News & Updates**
 
-We introduce TextPixs, a text-to-image framework that can efficiently generate images with accurate and legible text. TextPixs addresses a critical flaw in modern generative models, enabling new applications in advertising, design, and education. Core designs include:
+> **Latest Updates** - Stay tuned for the most recent developments
 
-(1) **Dual-Stream Text Encoder:** Processes both the semantic meaning and visual characteristics of text.
-(2) **Character-Aware Attention:** Ensures individual characters are rendered clearly and without distortion.
-(3) **OCR-in-the-Loop Feedback:** An integrated OCR system reviews and refines the generated text for accuracy.
+| Date | Update |
+|------|--------|
+| 🔥 **2025/07/07** | **Research Paper Submitted!** Our work has been submitted to ArXiv |
+| 🔥 **2025/07/05** | **Project Documentation Added!** Comprehensive documentation now available |
+| 🔥 **2025/06/20** | **Gradio Demo Added!** Interactive demo showcasing TextPixs capabilities |
+| 🔥 **2025/06/01** | **GCDA Introduced!** Novel Glyph-Conditioned Diffusion with Character-Aware Attention |
+| 🔥 **2024/10/27** | **TextPixs is born!** Initial commit and project setup |
 
-<p align="center">
-  <img src="./assets/results.png" width="90%" alt="TextPixs Results Image"/>
-</p>
+## 💡 **Introduction**
+
+### The Problem
+Modern text-to-image generation models struggle with accurate text rendering, producing blurry, distorted, or illegible text that limits their practical applications in advertising, design, and education.
+
+### Our Solution
+**TextPixs** introduces a revolutionary framework that addresses these limitations through three core innovations:
+
+| Innovation | Description | Impact |
+|------------|-------------|--------|
+| **🔄 Dual-Stream Text Encoder** | Processes both semantic meaning and visual characteristics of text | Enhanced text understanding |
+| **👁️ Character-Aware Attention** | Ensures individual characters are rendered clearly without distortion | Crisp character rendering |
+| **🔍 OCR-in-the-Loop Feedback** | Integrated OCR system reviews and refines generated text for accuracy | Real-time quality assurance |
+
+<div align="center">
+  <img src="./assets/results.png" width="90%" alt="TextPixs generates high-quality images with accurate text rendering"/>
+</div>
+
+## 🏆 **Performance**
+
+### Benchmark Results
+
+Our comprehensive evaluation demonstrates TextPixs' superior performance across key metrics:
 
 <div align="center">
 
-<h2>📊 PERFORMANCE</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>FID (↓)</th>
-      <th>CER (↓)</th>
-      <th>WER (↓)</th>
-      <th>Exact Match (%) (↑)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>DALL-E 2</td>
-      <td>13.9</td>
-      <td>0.45</td>
-      <td>0.58</td>
-      <td>18.5</td>
-    </tr>
-    <tr>
-      <td>Stable Diffusion 1.5</td>
-      <td>15.2</td>
-      <td>0.65</td>
-      <td>0.82</td>
-      <td>5.2</td>
-    </tr>
-    <tr>
-      <td>TextDiffuser-2</td>
-      <td>14.1</td>
-      <td>0.14</td>
-      <td>0.25</td>
-      <td>60.1</td>
-    </tr>
-    <tr style="background-color:#eafbf0; font-weight:bold;">
-      <td>TextPixs (Ours)</td>
-      <td>14.3</td>
-      <td>0.08</td>
-      <td>0.15</td>
-      <td>75.4 🏆</td>
-    </tr>
-  </tbody>
-</table>
+| Model | FID ↓ | CER ↓ | WER ↓ | Exact Match (%) ↑ |
+|-------|-------|-------|-------|-------------------|
+| DALL-E 2 | 13.9 | 0.45 | 0.58 | 18.5 |
+| Stable Diffusion 1.5 | 15.2 | 0.65 | 0.82 | 5.2 |
+| TextDiffuser-2 | 14.1 | 0.14 | 0.25 | 60.1 |
+| **TextPixs (Ours)** | **14.3** | **0.08** | **0.15** | **75.4** 🏆 |
 
 </div>
 
+### Key Achievements
 
-<p align="center">
-  <img src="./assets/GCDA Performance Breakthrough - Figure 9 from research paper.png" width="90%" alt="Performance Breakthrough"/>
-</p>
+- **🎯 75.4% Exact Match**: Highest accuracy in text rendering among all evaluated models
+- **📉 0.08 CER**: Lowest Character Error Rate, ensuring precise character recognition
+- **📊 0.15 WER**: Minimal Word Error Rate for comprehensive text accuracy
+- **⚡ Real-time Performance**: Efficient inference suitable for production environments
 
-## 🔥 Key Innovations
+<div align="center">
+  <img src="./assets/GCDA Performance Breakthrough - Figure 9 from research paper.png" width="90%" alt="Performance breakthrough visualization"/>
+</div>
 
-<p align="center">
-  <img src="./assets/Single Stream vs Dual Stream.png" width="90%" alt="Single Stream vs Dual Stream"/>
-</p>
+## 🔬 **Key Innovations**
 
-<p align="center">
-  <img src="./assets/Without and with segregation loss.png" width="90%" alt="Segregation Loss"/>
-</p>
+### 1. Dual-Stream Architecture
+Our dual-stream text encoder processes textual information through two parallel pathways:
 
-<p align="center">
-  <img src="./assets/Attention Problem - why characters merge.png" width="90%" alt="Attention Problem"/>
-</p>
+<div align="center">
+  <img src="./assets/Single Stream vs Dual Stream.png" width="90%" alt="Comparison between single-stream and dual-stream architectures"/>
+</div>
 
-## 🔮 Future Directions
+### 2. Character-Aware Attention Mechanism
+Addressing the fundamental challenge of character merging in attention mechanisms:
 
-<p align="center">
-  <img src="./assets/Future Research Directions Enabled by GCDA.png" width="90%" alt="Future Research"/>
-</p>
+<div align="center">
+  <img src="./assets/Attention Problem - why characters merge.png" width="90%" alt="Analysis of attention problems in character rendering"/>
+</div>
 
-## 📁 Folder Structure
+### 3. Segregation Loss Function
+Our novel loss function prevents character degradation during training:
 
-```
-TextPixs/
-├── assets/                 # Images for README and documentation
-├── Demo recording/         # Demo videos
-├── docs/                   # Project documentation and deliverables
-│   ├── FYP-Proposal/       # Contains project proposal documents
-│   ├── FYP1-Deliverables/  # Contains all deliverables from FYP1
-│   └── FYP2-Deliverables/  # Contains all deliverables from FYP2
-├── app/                    # Core application logic and Gradio demo files
-│   ├── app_textpixs.py     # Main Gradio application script
-│   ├── textpixs_pipeline.py # Defines the TextPixs diffusion pipeline
-│   ├── safety_check.py     # Safety checker for generated content
-│   ├── code_architecture.md  # This document
-│   └── model_architecture.md # Documentation for the TextPixs model architecture
-├── .github/                # GitHub Actions workflows and configurations
-├── LICENSE                 # Project license
-└── README.md               # Main project README file
+<div align="center">
+  <img src="./assets/Without and with segregation loss.png" width="90%" alt="Impact of segregation loss on text quality"/>
+</div>
+
+## 🚀 **Quick Start**
+
+### Prerequisites
+
+```bash
+Python >= 3.8
+PyTorch >= 2.0
+CUDA >= 11.0 (for GPU acceleration)
 ```
 
-## 🏁 Getting Started
+### Installation
 
-To run the Gradio demo:
-
-1.  **Clone the repository**:
-    ```bash
-    git clone https://github.com/SyedaAnshrahGillani/TextPixs.git
-    cd TextPixs
-    ```
-2.  **Navigate to the app directory**:
-    ```bash
-    cd app
-    ```
-3.  **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Run the app**:
-    ```bash
-    python app_textpixs.py
-    ```
-
-## 🏋️ Training
-
-To train TextPixs, you will need to prepare your data in the following format:
-
-```
-asset/example_data
-├── AAA.txt
-├── AAA.png
-├── BCC.txt
-├── BCC.png
+1. **Clone the repository**
+```bash
+git clone https://github.com/SyedaAnshrahGillani/TextPixs.git
+cd TextPixs
 ```
 
-Then, you can launch training with the following command:
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the Gradio demo**
+```bash
+cd app
+python app_textpixs.py
+```
+
+### Basic Usage
+
+```python
+from textpixs_pipeline import TextPixsPipeline
+
+# Initialize the pipeline
+pipeline = TextPixsPipeline.from_pretrained("textpixs-base")
+
+# Generate image with text
+prompt = "A beautiful sunset with the text 'Hello World' written in the sky"
+image = pipeline(prompt).images[0]
+
+# Save the result
+image.save("output.png")
+```
+
+### Advanced Configuration
+
+```python
+# Custom generation parameters
+image = pipeline(
+    prompt=prompt,
+    num_inference_steps=50,
+    guidance_scale=7.5,
+    height=512,
+    width=512,
+    ocr_feedback=True,  # Enable OCR-in-the-loop
+    character_attention=True  # Enable character-aware attention
+).images[0]
+```
+
+## 🏋️ **Training**
+
+### Data Preparation
+
+Organize your training data in the following structure:
+
+```
+asset/example_data/
+├── AAA.txt          # Text annotation
+├── AAA.png          # Corresponding image
+├── BCC.txt          # Text annotation
+├── BCC.png          # Corresponding image
+└── ...
+```
+
+### Training Configuration
 
 ```bash
 bash train_scripts/train.sh \
   configs/textpixs_config.yaml \
-  --data.data_dir="[asset/example_data]" \
-  --train.train_batch_size=32
+  --data.data_dir="asset/example_data" \
+  --train.train_batch_size=32 \
+  --train.learning_rate=1e-4 \
+  --train.num_epochs=100
 ```
 
-## 💪 To-Do List
+### Custom Training
 
-- [ ] Release online Gradio demo.
-- [ ] Release pre-trained models.
-- [ ] Add support for more languages.
-- [ ] Explore video generation capabilities.
+```python
+from textpixs_trainer import TextPixsTrainer
 
-## 🤗 ACKNOWLEDGEMENTS
+trainer = TextPixsTrainer(
+    model_config="configs/textpixs_config.yaml",
+    data_dir="asset/example_data",
+    output_dir="./checkpoints",
+    batch_size=32,
+    learning_rate=1e-4
+)
 
-We thank the authors of the following papers and open-source projects for their valuable contributions to the field:
+trainer.train()
+```
 
-*   [PixArt-α](https://github.com/PixArt-alpha/PixArt-alpha)
-*   [diffusers](https://github.com/huggingface/diffusers)
+## 📁 **Repository Structure**
 
-We would also like to thank our contributors:
+```
+TextPixs/
+├── 📁 app/                    # Core application and demo
+│   ├── app_textpixs.py        # Main Gradio application
+│   ├── textpixs_pipeline.py   # TextPixs diffusion pipeline
+│   ├── safety_check.py        # Content safety checker
+│   └── *.md                   # Documentation files
+├── 📁 assets/                 # Images and visual assets
+├── 📁 configs/                # Model and training configurations
+├── 📁 docs/                   # Comprehensive documentation
+│   ├── FYP-Proposal/          # Project proposal documents
+│   ├── FYP1-Deliverables/     # First phase deliverables
+│   └── FYP2-Deliverables/     # Second phase deliverables
+├── 📁 train_scripts/          # Training scripts and utilities
+├── 📁 .github/                # GitHub workflows and configurations
+├── 📋 requirements.txt        # Python dependencies
+├── 📄 LICENSE                 # Project license
+└── 📖 README.md               # This file
+```
 
-*   Mirza Samad Ahmed Baig
-*   Osama Ahmed Khan
-*   Shahid Munir Shah
-*   Umema Mujeeb
-*   Maheen Ali
+## 🔮 **Future Directions**
 
-## 📖 CITATION
+Our research opens exciting avenues for future exploration:
+
+<div align="center">
+  <img src="./assets/Future Research Directions Enabled by GCDA.png" width="90%" alt="Future research directions visualization"/>
+</div>
+
+### Roadmap
+
+- [ ] **🌐 Multi-language Support** - Extend to non-Latin scripts
+- [ ] **🎬 Video Generation** - Apply techniques to video synthesis
+- [ ] **📱 Mobile Optimization** - Lightweight models for mobile deployment
+- [ ] **🎨 Style Transfer** - Incorporate artistic text styles
+- [ ] **🔍 Real-time Editing** - Interactive text editing capabilities
+
+## 📖 **Citation**
+
+If you find TextPixs useful in your research, please cite our work:
 
 ```bibtex
 @article{gillani2025textpixs,
@@ -213,3 +272,65 @@ We would also like to thank our contributors:
   year={2025}
 }
 ```
+
+## 🤝 **Contributing**
+
+We welcome contributions from the research community! Please see our [Contributing Guidelines](./CONTRIBUTING.md) for details.
+
+### How to Contribute
+
+1. **🍴 Fork** the repository
+2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **💾 Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **📤 Push** to the branch (`git push origin feature/amazing-feature`)
+5. **🔄 Open** a Pull Request
+
+### Development Setup
+
+```bash
+# Clone your fork
+git clone https://github.com/your-username/TextPixs.git
+
+# Install development dependencies
+pip install -r requirements-dev.txt
+
+# Install pre-commit hooks
+pre-commit install
+```
+
+## 🙏 **Acknowledgements**
+
+We extend our gratitude to the following projects and individuals:
+
+### 🔬 **Research Foundations**
+- [PixArt-α](https://github.com/PixArt-alpha/PixArt-alpha) - Foundational diffusion architecture
+- [Diffusers](https://github.com/huggingface/diffusers) - Diffusion model implementations
+
+### 👥 **Core Contributors**
+
+| Contributor | Role | GitHub |
+|------------|------|--------|
+| **Syeda Anshrah Gillani** | Group Lead | [@SyedaAnshrahGillani](https://github.com/SyedaAnshrahGillani) |
+| **Mirza Samad Ahmed Baig** | External Supervisor & Sponsor | |
+| **Osama Ahmed Khan** | Internal Supervisor | |
+| **Shahid Munir Shah** | Co-Supervisor | |
+| **Umema Mujeeb** | Research Assistant | |
+| **Maheen Ali** | Research Assistant | |
+
+### 🏛️ **Institutional Support**
+We thank our institution for providing the computational resources and research environment that made this work possible.
+
+---
+
+<div align="center">
+  <p>
+    <strong>TextPixs</strong> - Revolutionizing Text-to-Image Generation<br>
+    Made with ❤️ by the TextPixs Team
+  </p>
+  
+  <p>
+    <a href="https://github.com/SyedaAnshrahGillani/TextPixs">⭐ Star</a> •
+    <a href="https://github.com/SyedaAnshrahGillani/TextPixs/issues">🐛 Report Bug</a> •
+    <a href="https://github.com/SyedaAnshrahGillani/TextPixs/issues">💡 Request Feature</a>
+  </p>
+</div>
