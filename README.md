@@ -29,6 +29,7 @@
 *   (🔥 New) [2025/07/08] Upgraded README to next level!
 *   (🔥 New) [2025/07/08] Added new assets for README.
 *   (🔥 New) [2025/07/08] Enhanced README and created CHANGELOG.
+*   (🔥 New) [2025/07/08] Initial project commit.
 
 ## 💡 INTRODUCTION
 
@@ -129,9 +130,16 @@ bash train_scripts/train.sh \
 
 We thank the authors of the following papers and open-source projects for their valuable contributions to the field:
 
-*   [Sana](https://github.com/SyedaAnshrahGillani/Sana)
 *   [PixArt-α](https://github.com/PixArt-alpha/PixArt-alpha)
 *   [diffusers](https://github.com/huggingface/diffusers)
+
+We would also like to thank our contributors:
+
+*   Mirza Samad Ahmed Baig
+*   Osama Ahmed Khan
+*   Shahid Munir Shah
+*   Umema Mujeeb
+*   Maheen Ali
 
 ## 📖 CITATION
 
@@ -139,7 +147,7 @@ We thank the authors of the following papers and open-source projects for their 
 @article{gillani2025textpixs,
   title={TextPixs: Glyph-Conditioned Diffusion with Character-Aware Attention and OCR-in-the-Loop Feedback for Accurate Text Rendering},
   author={Gillani, Syeda Anshrah and Baig, Mirza Samad Ahmed and Khan, Osama Ahmed and Shah, Shahid Munir and Mujeeb, Umema and Ali, Maheen},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint (coming soon)},
   year={2025}
 }
 ```
