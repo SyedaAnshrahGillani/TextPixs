@@ -26,11 +26,11 @@
 
 ## 🔥 NEWS
 
-*   (🔥 New) [2025/07/08] **TextPixs is born!** Initial commit and project setup.
-*   (🔥 New) [2025/07/08] **GCDA Introduced!** Our novel Glyph-Conditioned Diffusion with Character-Aware Attention model is added.
-*   (🔥 New) [2025/07/08] **Gradio Demo Added!** An interactive demo to showcase the power of TextPixs.
-*   (🔥 New) [2025/07/08] **Research Paper Submitted!** Our work has been submitted to ArXiv.
-*   (🔥 New) [2025/07/08] **Project Documentation Added!** Comprehensive documentation for the project is now available.
+*   (🔥 New) [2025/07/05] **Project Documentation Added!** Comprehensive documentation for the project is now available.
+*   (🔥 New) [2025/06/20] **Gradio Demo Added!** An interactive demo to showcase the power of TextPixs.
+*   (🔥 New) [2025/06/07] **Research Paper Submitted!** Our work has been submitted to ArXiv.
+*   (🔥 New) [2025/06/01] **GCDA Introduced!** Our novel Glyph-Conditioned Diffusion with Character-Aware Attention model is added.
+*   (🔥 New) [2024/10/27] **TextPixs is born!** Initial commit and project setup.
 
 ## 💡 INTRODUCTION
 
