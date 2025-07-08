@@ -4,7 +4,7 @@
 
 # TextPixs: Glyph-Conditioned Diffusion with Character-Aware Attention and OCR-in-the-Loop Feedback for Accurate Text Rendering
 
-**CVPR 2025**
+**ArXiv 2025**
 
 <div align="center">
   <a href="https://github.com/SyedaAnshrahGillani/TextPixs"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github"></a> &ensp;
@@ -29,7 +29,7 @@
 *   (🔥 New) [2025/07/08] **TextPixs is born!** Initial commit and project setup.
 *   (🔥 New) [2025/07/08] **GCDA Introduced!** Our novel Glyph-Conditioned Diffusion with Character-Aware Attention model is added.
 *   (🔥 New) [2025/07/08] **Gradio Demo Added!** An interactive demo to showcase the power of TextPixs.
-*   (🔥 New) [2025/07/08] **Research Paper Published!** Our work is accepted to CVPR 2025.
+*   (🔥 New) [2025/07/08] **Research Paper Submitted!** Our work has been submitted to ArXiv.
 *   (🔥 New) [2025/07/08] **Project Documentation Added!** Comprehensive documentation for the project is now available.
 
 ## 💡 INTRODUCTION
