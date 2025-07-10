@@ -3,7 +3,7 @@
 <div align="center">
   <img src="./assets/logo.png" width="900" alt="TextPixs Logo"/>
   
-  [![Paper](https://img.shields.io/badge/arXiv-2025-red.svg?logo=arxiv)](https://arxiv.org/abs/XXXX.XXXXX)
+  [![Paper](https://img.shields.io/badge/arXiv-2507.06033-red.svg?logo=arxiv)](https://arxiv.org/abs/2507.06033)
   [![Project](https://img.shields.io/badge/GitHub-Project-blue.svg?logo=github)](https://github.com/SyedaAnshrahGillani/TextPixs)
   [![Demo](https://img.shields.io/badge/🤗-Demo-yellow.svg)](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
@@ -12,7 +12,7 @@
   
   **A Revolutionary Text-to-Image Framework for Accurate and Legible Text Rendering**
   
-  [📄 Paper](https://arxiv.org/abs/XXXX.XXXXX) • [🤗 Demo](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs) • [📚 Documentation](./docs/) • [🚀 Quick Start](#-quick-start)
+  [📄 Paper](https://arxiv.org/abs/2507.06033) • [🤗 Demo](https://huggingface.co/spaces/SyedaAnshrahGillani/TextPixs) • [📚 Documentation](./docs/) • [🚀 Quick Start](#-quick-start)
 </div>
 
 ---
